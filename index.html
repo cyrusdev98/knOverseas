@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kn Overseas | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="./images/hero1.jpg">
+    <link rel="preload" as="image" href="./images/hero2.jpg">
+    <link rel="preload" as="image" href="./images/hero3.jpg">
+    <link rel="preload" as="image" href="./images/banner.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- FLOATING CHAT FAB -->
+    <div id="chat-fab" class="chat-fab">
+        <!-- Toggle button -->
+        <button id="fabToggle" class="fab-btn" aria-expanded="false" aria-controls="fabMenu"
+            aria-label="Open chat options">
+            <i class="fa-solid fa-comments"></i>
+        </button>
+
+        <!-- Vertical menu -->
+        <div id="fabMenu" class="fab-menu" role="menu" aria-label="Chat options">
+            <a class="fab-item fab-whatsapp"
+                href="https://wa.me/919999999999?text=Hi%20KN%20Overseas%2C%20I%27d%20like%20to%20know%20more."
+                target="_blank" rel="noopener" role="menuitem" aria-label="WhatsApp chat">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a class="fab-item fab-phone" href="tel:+919999999999" role="menuitem" aria-label="Call us">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a class="fab-item fab-mail" href="mailto:info@knoverseas.com" role="menuitem" aria-label="Email us">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="top-sentinel" aria-hidden="true"></div>
+
+    <div class="bg-services" aria-hidden="true"></div>
+
+    <section id="hero">
+        <div class="bg-fixed-carousel bg-hero" aria-hidden="true">
+            <div class="slide" style="background-image:url('./images/hero3.jpg')"></div>
+            <div class="slide" style="background-image:url('./images/hero2.jpg')"></div>
+            <div class="slide" style="background-image:url('./images/hero1.jpg')"></div>
+        </div>
+        <div id="hero-content">
+            <nav class="scrolled">
+                <div id="logo">
+                    <h1>Kn Overseas</h1>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle menu" aria-controls="navitems" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <ul id="navitems">
+                    <li class="navitem"><a href="#">Home</a></li>
+                    <li class="navitem"><a href="#services">Our Services</a></li>
+                    <li class="navitem"><a href="about.html">About Us</a></li>
+                    <li class="navitem"><a href="#reviews">Testimonials</a></li>
+                    <li class="navitem"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div id="hero-text">
+                <h1>Travel Beyond Expectations</h1>
+                <h2>Dream. Decide. Depart.</h2>
+                <a href="#contact"><button class="btn" id="hero-btn">
+                        <i class="fa-solid fa-phone-volume"></i> Book Appointment
+                    </button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="whatwedo">
+        <div id="overlay-cards">
+            <div class="ocard">
+                <h2><i class="fa-solid fa-people-group"></i> Understand</h2>
+
+
+                <p>We aim to understand the reason for your travel, your profession, and the travel history of all
+                    individuals participating in your trip.</p>
+                </span>
+            </div>
+            <div class="ocard">
+                <h2><i class="fa-solid fa-headset"></i> Guide and Support</h2>
+                <p>For your travel purpose, we provide guidance throughout the Visa process, help with necessary
+                    documents, and offer support for any questions or clarifications.</p>
+            </div>
+            <div class="ocard">
+                <h2><i class="fa-solid fa-list-check"></i> Process</h2>
+                <p>Once your documents are received, we initiate the submission process, including completing forms
+                    online or offline, scheduling appointments, and providing support with the consulate or online.</p>
+            </div>
+        </div>
+
+        <div id="whatwetext">
+            <div id="offer-main">
+                <h2>What we Offer</h2>
+                <p>Welcome to Kn Overseas, your reliable partner in travel and visa solutions. Dedicated to delivering
+                    excellence and ensuring customer satisfaction, we have proudly supported travelers for many years.
+                </p>
+                <p>
+                    Our story started with a mission to make the visa process straightforward and accessible, helping
+                    people explore the world with ease. Today, Newland Travel is recognized globally for its expertise
+                    in visa processing, passport services, and tailor-made travel experiences.
+                </p>
+                <h2>Our Services</h2>
+                <ul id="service-list">
+                    <li>&#9989; Visa Assistance</li>
+                    <li>&#9989; Vacation Packages</li>
+                    <li>&#9989; Study Abroad Guidance</li>
+                    <li>&#9989; Flight Booking</li>
+                    <li>&#9989; Travel Insurance</li>
+                </ul>
+            </div>
+            <img src="./images/why-image.jpg" alt="What we Offer" id="why-image">
+        </div>
+    </section>
+
+
+    <section id="services" class="has-fixed-bg svc-services">
+        <div class="fixed-bg" style="--bg: url('./images/service-img.jpg');
+              --overlay: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,1));"></div>
+
+        <div id="service-title">
+            <h2>Our Services</h2>
+        </div>
+
+        <!-- Compact cards grid -->
+        <div class="svc-grid blur-bg">
+            <!-- Visa -->
+            <article class="svc-card" data-title="Visa Services">
+                <img src="./images/visa.png" alt="Visa Services" class="svc-thumb">
+                <div class="svc-body">
+                    <h3 class="svc-name">Visa Services</h3>
+                    <p class="svc-snippet">Tourist, business, study visas for USA, Canada, Australia, Schengen & more.
+                    </p>
+                    <a href="#" class="svc-more" data-target="#full-visa">View more</a>
+                </div>
+            </article>
+
+            <!-- Holiday -->
+            <article class="svc-card" data-title="Holiday Packages">
+                <img src="./images/holiday.jpg" alt="Holiday Packages" class="svc-thumb">
+                <div class="svc-body">
+                    <h3 class="svc-name">Holiday Packages</h3>
+                    <p class="svc-snippet">Custom trips: beaches, cities, adventures—flights & stays arranged.</p>
+                    <a href="#" class="svc-more" data-target="#full-holiday">View more</a>
+                </div>
+            </article>
+
+            <!-- Insurance -->
+            <article class="svc-card" data-title="Travel Insurance">
+                <img src="./images/insurance.jpg" alt="Travel Insurance" class="svc-thumb">
+                <div class="svc-body">
+                    <h3 class="svc-name">Travel Insurance</h3>
+                    <p class="svc-snippet">Cover cancellations, baggage, medical emergencies with 24/7 help.</p>
+                    <a href="#" class="svc-more" data-target="#full-insurance">View more</a>
+                </div>
+            </article>
+
+            <!-- Flights -->
+            <article class="svc-card" data-title="Flight Tickets">
+                <img src="./images/flight.jpg" alt="Flight Tickets" class="svc-thumb">
+                <div class="svc-body">
+                    <h3 class="svc-name">Flight Tickets</h3>
+                    <p class="svc-snippet">Great routes & deals—one-way, round-trip, or multi-city with support.</p>
+                    <a href="#" class="svc-more" data-target="#full-flight">View more</a>
+                </div>
+            </article>
+
+            <!-- Hotels -->
+            <article class="svc-card" data-title="Hotel Booking">
+                <img src="./images/hotel.jpg" alt="Hotel Booking" class="svc-thumb">
+                <div class="svc-body">
+                    <h3 class="svc-name">Hotel Booking</h3>
+                    <p class="svc-snippet">Luxury to budget—transparent reviews and secure reservations.</p>
+                    <a href="#" class="svc-more" data-target="#full-hotel">View more</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Full text (copied from your original content) -->
+        <div id="full-visa" class="svc-hidden" hidden>
+            <p>At Kn Overseas, we know obtaining the right visa opens the door to your international travels. Our visa
+                services cover many destinations including the USA, Canada, Australia, China, New Zealand, Schengen
+                countries, and more, tailored for tourism, business, education, and beyond.</p>
+            <p>Our experienced team offers personalized support to ensure your application meets all requirements and is
+                processed efficiently and accurately. From initial questions to form submission and follow-up, we guide
+                you every step of the way, making visa acquisition simple and reliable.</p>
+            <p>With Kn Overseas, you can trust in professional visa services designed to help you start your global
+                journey with confidence and ease.</p>
+        </div>
+
+        <div id="full-holiday" class="svc-hidden" hidden>
+            <p>At Kn Overseas, we create memorable holiday experiences tailored to your preferences while ensuring
+                comfort and enjoyment throughout your trip. We offer a wide selection of destinations across the globe,
+                from peaceful beaches to vibrant cities. Each holiday package is customizable to match your interests,
+                whether you seek adventure, relaxation, or cultural immersion.</p>
+            <p>Our travel experts plan every detail meticulously, providing seamless and hassle-free service. We include
+                everything from flights and accommodations to local tours and dining recommendations, all at competitive
+                prices.</p>
+            <p>With Kn Overseas, embark on your ideal vacation with confidence, knowing you are supported by a team
+                dedicated to making your travel dreams come true.</p>
+        </div>
+
+        <div id="full-insurance" class="svc-hidden" hidden>
+            <p>At Kn Overseas, we recognize that unforeseen events can interrupt your travel plans. That’s why we
+                provide comprehensive travel insurance to give you peace of mind throughout your journey. Our plans are
+                designed to protect you from a variety of unexpected situations, including trip cancellations and
+                medical emergencies abroad.</p>
+            <p>Our insurance offers extensive coverage for scenarios like lost baggage, medical issues, and trip
+                interruptions. With 24/7 assistance, support is always available whenever and wherever you need it. You
+                can customize your plan to suit individual trips or frequent travel needs, providing flexible protection
+                worldwide.</p>
+            <p>Choosing Kn Overseas Travel Insurance means investing in a secure and worry-free travel experience. We
+                prioritize your safety and comfort so you can explore with confidence and focus on making lasting
+                memories.</p>
+        </div>
+
+        <div id="full-flight" class="svc-hidden" hidden>
+            <p>At Kn Overseas, we know that smooth flight bookings are the foundation of hassle-free travel. Our flight
+                ticket service is designed to make your journey comfortable and straightforward from the start. We offer
+                a wide selection of airlines and routes suitable for business travelers, families, or solo adventurers.
+                Our competitive pricing ensures you get great deals without sacrificing quality or service.</p>
+            <p>Booking is simple with our user-friendly online platform, allowing you to secure your tickets in just a
+                few clicks. Our customer support team is always ready to help with any special requests or questions,
+                ensuring a stress-free process.</p>
+            <p>With flexible options for one-way, round-trip, or multi-city bookings, you can tailor your itinerary to
+                fit your travel plans perfectly. Choosing Kn Overseas means choosing convenience, reliability, and
+                excellent service for your flight bookings.</p>
+        </div>
+
+        <div id="full-hotel" class="svc-hidden" hidden>
+            <p>At Kn Overseas, we believe that a great journey is defined not just by the destination but also by the
+                quality of your accommodation. Our hotel booking service is crafted to enhance your travel experience
+                with ease and comfort. We offer a wide range of lodging options to fit every traveler’s needs, from
+                luxury resorts to affordable hotels worldwide.</p>
+            <p>Our user-friendly platform makes it simple to browse and filter choices by price, location, amenities,
+                and more. Enjoy the best value with our competitive pricing and exclusive deals, backed by transparent
+                reviews and ratings to help you make informed decisions. Your bookings are secure, and your personal
+                information is protected.</p>
+            <p>Choose Kn Overseas for seamless hotel reservations that perfectly complement your travel, ensuring
+                memorable stays wherever you go.</p>
+        </div>
+
+        <!-- Reusable modal -->
+        <div id="svcModal" class="svc-modal" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="svc-backdrop" data-close="1"></div>
+            <div class="svc-dialog" role="document" aria-labelledby="svcModalTitle">
+                <header class="svc-header">
+                    <h3 id="svcModalTitle" class="svc-modal-title">Title</h3>
+                    <button class="svc-close" aria-label="Close" title="Close">&times;</button>
+                </header>
+                <div class="svc-modal-body"></div>
+            </div>
+        </div>
+        <!-- Reusable modal: place at the END OF BODY, not inside #services -->
+    </section>
+
+
+
+    <section id="popularc">
+        <div id="popular-title">
+            <h3>Most Popular Destinations</h3>
+        </div>
+
+        <div class="pc-wrapper">
+            <button class="pc-arrow prev" type="button" aria-label="Previous">
+                <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="pc-viewport">
+                <div id="city-carousel" class="pc-track ">
+                    <div class="carousel-card"><img src="./images/dubai.jpg" alt="Dubai" class="city-img">
+                        <p>Dubai</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/singapore.jpg" alt="Singapore" class="city-img">
+                        <p>Singapore</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/bangkok.jpg" alt="Bangkok" class="city-img">
+                        <p>Bangkok</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/bali.jpg" alt="Bali" class="city-img">
+                        <p>Bali</p>
+                    </div>
+
+                    <div class="carousel-card"><img src="./images/paris.jpg" alt="Paris" class="city-img">
+                        <p>Paris</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/london.jpg" alt="London" class="city-img">
+                        <p>London</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/rome.jpg" alt="Rome" class="city-img">
+                        <p>Rome</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/barcelona.jpg" alt="Barcelona" class="city-img">
+                        <p>Barcelona</p>
+                    </div>
+
+                    <div class="carousel-card"><img src="./images/istanbul.jpg" alt="Istanbul" class="city-img">
+                        <p>Istanbul</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/amsterdam.jpg" alt="Amsterdam" class="city-img">
+                        <p>Amsterdam</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/zurich.jpg" alt="Zurich" class="city-img">
+                        <p>Zurich</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/tokyo.jpg" alt="Tokyo" class="city-img">
+                        <p>Tokyo</p>
+                    </div>
+
+                    <div class="carousel-card"><img src="./images/seoul.jpg" alt="Seoul" class="city-img">
+                        <p>Seoul</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/newyork.jpg" alt="New York" class="city-img">
+                        <p>New York</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/sydney.jpg" alt="Sydney" class="city-img">
+                        <p>Sydney</p>
+                    </div>
+                    <div class="carousel-card"><img src="./images/kualalumpur.jpg" alt="Kuala Lumpur" class="city-img">
+                        <p>Kuala Lumpur</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="pc-arrow next" type="button" aria-label="Next">
+                <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </section>
+
+
+
+    <section id="about-kn">
+        <!-- Top cards -->
+        <div class="top-cards">
+            <article class="info-card">
+                <h3 class="info-title">Our Vision</h3>
+                <p class="info-text">
+                    At <b>KN Overseas</b>, our vision is to be India’s most dependable travel & visa partner—
+                    a place where people feel informed, confident, and calm as their application moves forward.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3 class="info-title">Our Mission</h3>
+                <p class="info-text">
+                    We guide every client with clear steps, fast replies, and friendly support—so
+                    <b>KN Overseas</b> is your first choice for visas and travel planning, with fair, transparent
+                    pricing.
+                </p>
+            </article>
+        </div>
+
+        <!-- Why choose us -->
+        <div class="why-wrap">
+            <div class="why-img">
+                <!-- REPLACE with your own image -->
+                <img src="./images/why-choose-us.jpg" alt="Team assisting clients with visa documents">
+            </div>
+
+            <div class="why-text">
+                <h2 class="why-title">Why Choose Us for Your Visa & Travel Needs?</h2>
+                <p class="why-intro">
+                    Planning international travel can be exciting—and confusing. <b>KN Overseas</b> keeps it simple.
+                    Our focused process and reliable timelines let you relax while we handle the details.
+                </p>
+
+                <ul class="points">
+                    <li>
+                        <span class="tick" aria-hidden="true"></span>
+                        <div class="point-body">
+                            <b>Proven Expertise:</b> We’ve successfully supported thousands of applicants—delivering
+                            memorable trips and solid results.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tick" aria-hidden="true"></span>
+                        <div class="point-body">
+                            <b>Tailored Plans:</b> Family vacation, business travel, study, or solo trips—we build
+                            itineraries that fit your goals and documents.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tick" aria-hidden="true"></span>
+                        <div class="point-body">
+                            <b>Visa Made Simple:</b> Clear checklists, appointment support, and document reviews reduce
+                            rework and speed up approvals.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tick" aria-hidden="true"></span>
+                        <div class="point-body">
+                            <b>Responsive Team:</b> Quick answers on calls and chat, friendly updates, and guidance at
+                            every step of your journey.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <div class="container">
+            <p class="subheading">Contact With Us</p>
+            <h2 class="heading">Feel Free to Get in Touch with us</h2>
+
+            <form class="form" action="#" method="post">
+                <!-- row 1 -->
+                <div class="row">
+                    <input class="input" type="text" name="name" placeholder="Name" />
+                    <input class="input" type="email" name="email" placeholder="Email" />
+                </div>
+
+                <!-- row 2 -->
+                <div class="row">
+                    <input class="input" type="tel" name="phone" placeholder="Phone Number" />
+                    <div class="select-wrap">
+                        <select class="select" name="service" aria-label="Select Services">
+                            <option value="" selected disabled>Select Services</option>
+                            <option>Tour Packages</option>
+                            <option>Flight Booking</option>
+                            <option>Visa Assistance</option>
+                            <option>Hotel Reservation</option>
+                        </select>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+
+                <!-- message -->
+                <textarea class="textarea" name="message" placeholder="Message"></textarea>
+
+                <button class="button" type="submit">Send a Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact-section">
+        <div class="ct-container">
+            <div class="ct-grid">
+                <div class="ct-card">
+                    <span class="ct-icon"><i class="fa-solid fa-envelope-open-text"></i></span>
+                    <h3>Write To Us</h3>
+                    <p><a href="mailto:info@knoverseas.com">info@knoverseas.com</a></p>
+                </div>
+
+                <div class="ct-card">
+                    <span class="ct-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <h3>Visit Us</h3>
+                    <p>
+                        2K, Aroma cafe tea & talk, 222-318, Street Number 1, near Arjun Theater, Jal Vayu Vihar,
+                        Kukatpally, Hyderabad, Telangana 500085
+                    </p>
+                </div>
+
+                <div class="ct-card">
+                    <span class="ct-icon"><i class="fa-solid fa-phone"></i></span>
+                    <h3>Call Us</h3>
+                    <p>
+                        <a href="tel:+91xxxxxxxxxx">+91 8xxxx xxxxx</a><br>
+                        <a href="tel:+91xxxxxxxxxx">+91 8xxxx xxxxx</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="ct-map-wrap">
+            <iframe class="ct-map"
+                src="https://www.google.com/maps?hl=en&q=17.4971828,78.396624(Aroma%20cafe%20tea%20%26%20talk)&z=16&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+                aria-label="Aroma cafe tea & talk, Hyderabad">
+            </iframe>
+
+            <!-- optional: small link under the map -->
+            <div style="text-align:center; padding:8px 0;">
+                <a href="https://maps.app.goo.gl/vdy5t1aaszPAoScJA" target="_blank" rel="noopener">Open in Google
+                    Maps</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="reviews">
+        <div class="reviews-head">
+            <div class="stars-top" aria-hidden="true">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="based-text">Based on Google Reviews</p>
+            <div class="google-logo" aria-label="Google">
+                <span class="g-b">G</span><span class="g-r">o</span><span class="g-y">o</span><span
+                    class="g-b">g</span><span class="g-g">l</span><span class="g-r">e</span>
+            </div>
+        </div>
+
+        <div class="reviews-viewport" id="reviewsViewport">
+            <ul class="reviews-track" id="reviewsTrack">
+                <!-- 1 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                I had a very smooth experience with <b>KN Overseas</b>. The team guided me clearly for
+                                my Schengen work visa and kept me updated at every step.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Sai Kumar Reddy (Andhra Pradesh)</figcaption>
+                    </figure>
+                </li>
+                <!-- 2 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                Thanks to <b>KN Overseas</b> for my Finland residence permit. Documents were checked
+                                thoroughly and I got approval in just 3 days.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Pranitha Chowdary (Telangana)</figcaption>
+                    </figure>
+                </li>
+                <!-- 3 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                Wonderful guidance for our family visas to Australia & Thailand. They even helped with
+                                address change in my child’s passport.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Ravi Teja (Andhra Pradesh)</figcaption>
+                    </figure>
+                </li>
+                <!-- 4 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                Got France visa exactly on the committed timeline. Transparent process and cooperative
+                                team at <b>KN Overseas</b>.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Shravani Goud (Telangana)</figcaption>
+                    </figure>
+                </li>
+                <!-- 5 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                My Canada study visa filing was stress-free. SOP, mock interviews and college shortlist
+                                were all on point.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Charan Kalyan (Andhra Pradesh)</figcaption>
+                    </figure>
+                </li>
+                <!-- 6 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                I approached them for UK business visa. Checklist was perfect and appointments well
+                                managed. Approved in first attempt!
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Lavanya Reddy (Telangana)</figcaption>
+                    </figure>
+                </li>
+                <!-- 7 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                For my Dubai trip, they arranged visa, flights and hotel with zero last-minute issues.
+                                Very fair pricing.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Anil Kumar (Andhra Pradesh)</figcaption>
+                    </figure>
+                </li>
+                <!-- 8 -->
+                <li class="review">
+                    <figure class="review-wrap">
+                        <div class="card">
+                            <p class="text">
+                                Excellent support for my Schengen tourist visa. Quick responses and detailed document
+                                checks. Timelines respected.
+                            </p>
+                            <div class="stars" aria-hidden="true">★★★★★</div>
+                        </div>
+                        <figcaption class="name">Deepika Shetty (Telangana)</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer id="kn-footer" class="kf" style="--footer-bg: url('./images/footer-bg.jpg');">
+        <!-- Top strip -->
+        <div class="kf-top kf-container">
+            <p class="kf-strap">
+                Approved Traveler Visa Applications.
+                <a href="#services">Get Your Visa</a>
+            </p>
+            <p class="kf-help">
+                <i class="fa-solid fa-comments"></i>
+                Have Question?
+                <strong><a href="tel:+918401144494">Free +91 84011 44494</a></strong>
+            </p>
+        </div>
+
+        <hr class="kf-rule">
+
+        <div class="kf-grid kf-container">
+            <!-- About -->
+            <div class="kf-col kf-about">
+                <h4 class="kf-title">About Company</h4>
+                <p>
+                    Welcome to <strong>Kn Overseas</strong>, your trusted partner in the world of travel
+                    and visas. With a commitment to excellence and customer satisfaction, we have been
+                    serving travelers’ needs for years.
+                </p>
+
+                <div class="kf-social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" style="color: black;"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="kf-col">
+                <h4 class="kf-title">Quick Links</h4>
+                <ul class="kf-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#whatwedo">Company</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#services">Visa Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#contact-section">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="kf-col">
+                <h4 class="kf-title">Services</h4>
+                <ul class="kf-links">
+                    <li><a href="#services">Visa Services</a></li>
+                    <li><a href="#services">Holiday Packages</a></li>
+                    <li><a href="#services">Flight Ticket</a></li>
+                    <li><a href="#services">Hotel Booking</a></li>
+                    <li><a href="#services">Travel Insurance</a></li>
+                </ul>
+            </div>
+
+            <!-- Get In Touch -->
+            <div class="kf-col">
+                <h4 class="kf-title">Get In Touch</h4>
+
+                <div class="kf-line">
+                    <span class="kf-ico"><i class="fa-solid fa-envelope"></i></span>
+                    <div><a href="mailto:info@exam.ple.knoverseas.com">info@knoverseas.example.com</a></div>
+                </div>
+
+                <div class="kf-line">
+                    <span class="kf-ico"><i class="fa-solid fa-phone"></i></span>
+                    <div>
+                        <a href="tel:+91xxxxxxxxxx">+91 8xxxx xxxxx</a><br>
+                        <a href="tel:+91xxxxxxxxxx">+91 8xxxx xxxxx</a>
+                    </div>
+                </div>
+
+                <div class="kf-line">
+                    <span class="kf-ico"><i class="fa-solid fa-location-dot"></i></span>
+                    <address>
+                        2K, Aroma cafe tea & talk, 222-318, Street Number 1, near Arjun Theater, Jal Vayu Vihar,
+                        Kukatpally, Hyderabad, Telangana 500085
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="kf-bottom">
+            © All Copyright 2024 by <strong>Kn Overseas</strong> | All Rights Reserved
+        </div>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+
+
+    <div id="svcModal" class="svc-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="svc-backdrop" data-close="1"></div>
+        <div class="svc-dialog" role="document" aria-labelledby="svcModalTitle">
+            <header class="svc-header">
+                <h3 id="svcModalTitle" class="svc-modal-title">Title</h3>
+                <button class="svc-close" aria-label="Close" title="Close">&times;</button>
+            </header>
+            <div class="svc-modal-body"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
